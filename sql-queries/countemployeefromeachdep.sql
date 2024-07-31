@@ -1,0 +1,1 @@
+SELECT COUNT(*),department from employee group by department; 

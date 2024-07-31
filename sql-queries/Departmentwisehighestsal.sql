@@ -1,0 +1,1 @@
+SELECT MAX(amount),item from Orders group BY item;
