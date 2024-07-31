@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        async function getdaata() {
+            // const res = await fetch('https://api.pujakaitem.com/api/products');
+            const ans = await res.json();
+            // console.log(ans);
+        }
+
+        // getdaata();
+
+
+        // const add = (num1, num2) => ({ username: "himanshu" })
+        // console.log(add(2, 3));
+
+
+        // this keyword
+
+        //   1st case:in a method
+
+        const obj = {
+            name: "himanshu",
+            dislpay() {
+                console.log(this);
+            }
+        }
+        obj.dislpay();  //output:{name: 'himanshu', dislpay: ƒ}
+
+
+        // 2nd case:in a regular fn
+        function dislpau() {
+            //console.log(this);  //output: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+        }
+        dislpau();
+
+
+        //  callback functions
+        // function add(a, b, cb) {
+        //     let sum = a + b;
+        //     cb(sum);
+        // }
+
+        // add(2, 3, function (val) {
+        //     console.log(val)
+        // })
+
+
+
+
+    </script>
+</body>
+
+</html>
